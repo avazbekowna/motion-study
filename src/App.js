@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.scss';
+import "./style/Style.scss"
+import {Route, Routes} from "react-router";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Study from "./components/Study/Study";
+import Contacts from "./components/Contacts/Contacts";
+import Search from "./components/Search/Search"
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Routes>
+        <Route path={"/Header"} element={<Header/>}/>
+        <Route path={"/Footer"} element={<Footer/>}/>
+        <Route path={"/Home"} element={<Home/>}/>
+        <Route path={"/About"} element={<About/>}/>
+        <Route path={"/Study"} element={<Study/>}/>
+        <Route path={"/Contacts"} element={<Contacts/>}/>
+        <Route path={"/Search"} element={<Search/>}/>
+
+      </Routes>
+
     </div>
   );
 }

@@ -1,0 +1,53 @@
+#header{
+  background: #FFFFFF;
+  box-shadow: 5px 8px 24px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  .header-line{
+    background: #FF6A6A;
+    width: 1365px;
+    height: 10px;
+  }
+  .header-block{
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+     .name {
+       font-family: 'Montserrat',sans-serif;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 17px;
+       text-transform: capitalize;
+       color: #212121;
+
+       margin-right: 60px;
+
+     }
+
+    }
+    &--lang{
+      input{
+        width: 187px;
+        height: 43px;
+        background: rgba(255, 255, 255, 0.95);
+        opacity: 0.95;
+        border: 0.8px solid rgba(86, 9, 187, 0.2);
+        border-radius: 8px;
+      }
+
+      .language{
+        margin-left: 20px;
+        border: none;
+      }
+    }
+  }
+
+}
